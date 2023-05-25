@@ -4,15 +4,20 @@ header{
 }
 
 #logo{
-    border-radius: 10px
+    border-radius: 12px
 }
 
 .titulo-principal{
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
-    top: 18%;
+    top: 13%;
     left: 50%;
-    transform: translate(-30%, -15%)
-    font-size: 35px;
+    transform: translate(-30%, -12%);
+    font-size: 31px;
     /*font-family: Barlow;*/
+}
+
+main{
+    width: 940px;
+    margin: auto;
 }
