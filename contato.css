@@ -21,3 +21,24 @@ main{
     width: 940px;
     margin: auto;
 }
+
+form{
+    margin: 40px 0; /*margem superior e inferior de 40px, para os lados zero*/
+}
+
+form label, form p{/*vamos replicar a mesma configuração do form label para o parágrafo, por isso, o uso da vírgula */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;/* 10px para baixo*/
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;/* 20px para baixo*/
+    padding: 0 0 20px;/* 10 px p/ cima e p/ baixo e 25px p/ lados*/
+    width: 50%;/* largura dos meus inputs*/
+}
+
+.checkbox{
+    margin: 20px 0;/* 20px p/ cima e p/ baixo e zero nas laterais*/
+}

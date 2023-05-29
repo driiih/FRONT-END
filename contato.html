@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="White Modern Beauty Logo.png">
+            <img id="logo" src="logo1.png">
             <h1 class="titulo-principal">Vendas de Roupas, Acessórios, Bolsas e etc.</h1>
 
         </header>
@@ -21,15 +21,42 @@
                 
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+                
 
-                <label for="telefone">"Telefone</label>
-                <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="(xx)xxxxx-xxxx" required>b 
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="(xx)xxxxx-xxxx" required>
 
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" placeholder="Digite seu texto aqui!" reuired></textarea>
+                
+                <section>
+                <p>Como prefere nosso contato?</p>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+                <label for="radio-Whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-Whatsapp" checked>Whatsapp</label>
+                </section>
+
+                <section>
+                    <p>Qual horario prefere ser atendido?</p>
+                    <select>
+                        <option>Manhã</option>
+                        <!--dropdpwn - seleções selecionáveis-->
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </section>
+
+                <label class="checked">
+                    <input type="checked"> Gostaria de receber novas novidades por email?</label>
+                    <input type="submit" value="Enviar Formulario" class="enviar">
             </form>
 
         </main>
-        <footer>
 
+        <footer>
+            <img id="logo1" src="logo1.png" width="200px" height="150px">
+            <p class="copyright">&copy; Copyright --Driih Bittencourt</p>
         </footer>
     </body>
     </html>
