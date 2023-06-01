@@ -8,12 +8,12 @@ header{
 }
 
 .titulo-principal{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     position: absolute;
-    top: 13%;
+    top: 8%;
     left: 50%;
     transform: translate(-30%, -12%);
-    font-size: 31px;
+    font-size: 45px;
     /*font-family: Barlow;*/
 }
 
@@ -39,6 +39,60 @@ form label, form p{/*vamos replicar a mesma configuração do form label para o 
     width: 50%;/* largura dos meus inputs*/
 }
 
+input::placeholder{
+    color: black;
+}
+
 .checkbox{
     margin: 20px 0;/* 20px p/ cima e p/ baixo e zero nas laterais*/
 }
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(243, 156, 220);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(231, 183, 215);
+    transform: scale(2,2);
+}
+
+.copyright{
+    color: rgb(7, 6, 7);
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    /*Esta propriedade é utilizada para inserir imagens como plano de fundo de um elemento para isso, fazemos uso da função url().
+    para a qual passamos como parâmetro o caminho da imagem a ser inserida.*/
+   
+    padding: 10px;
+}
+
+.titulo-principal1{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-30%, -12%);
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
