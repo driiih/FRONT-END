@@ -87,10 +87,37 @@ footer{
     left: 50%;
     transform: translate(-30%, -12%);
     font-size: 20px;
+    color: aliceblue;
+    /*A propiredade text-shadow acrescenta sombra. Ela aceita uma lista de sombras separadas 
+    aplicados ao texto e ao text-decorations*/
+    color: 0;
+    text-shadow: 
+                -1px -1px 0px #4d4b4c,
+                -1PX 4PX 0PX #4d4b4c,
+                1px -1px 0px #4d4b4c,
+                1px 0px 0px #4d4b4c;
 }
 
+nav{
+    position: absolute;
+    /*posicionamento dos links*/
+    top: 100px;
+    right: 50px;
+}
 
+nav 11{
+    display: inline;
+    margin: 0 0 0 15px;
+}
 
+nav a{
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Josefin Sans',sans-serif;
+
+}
 
 
 
