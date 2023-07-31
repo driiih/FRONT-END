@@ -1,80 +1,120 @@
-body{
-  background-image: linear-gradient(to right, rgb(133, 16, 223), rgb(139, 110, 160));
-  font-family: Arial, Helvetica, sans-serif;
+header{
+    background-color:rgb(245, 168, 227);
+    padding: 20px;
 }
 
-.box{
-  color: white;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 25px;
-  width: 40%;
-}
-fieldset{
-  border: 3px, solid rgb(133, 20, 220);
-}
-legend{
-  border: 1px, solid rgb(133, 20, 220);
-  padding: 10px;
-  text-align: center;
-  background-color: rgb(133, 20, 220);
-  border-radius: 8px;
-}
-.inputBox{
-  position: relative;
-}
-.inputUser{
-  background: none;
-  border: none; /*tirar a borda*/
-  border-bottom: 1px solid white;
-  outline: none; /*tirar a linha de fora do input*/
-  color: white;
-  font-size: 20px;
-  width: 100%; /*comprimento da linha*/
-  letter-spacing: 2px;/*espaço entre cada caracter no input*/
-}
-labelinput{/* animação das labels - nessa parte, as labels irão
-  se encaixar dentro dos inputs*/
-position: absolute; /* vai ocupar apenas o elemento dela mesma */
-top: 0px;
-left: 0px;
-pointer-events: none;/* qualquer lugar que eu clicar dentro do input, ele vai executar a ação */
-transition: 5px;/* transição - para criaçao de efeitos de animação personalizado*/
+#logo{
+    border-radius: 12px
 }
 
-/*Quando clicar no input eu quero que a label vai para cima do input - por isso a ação é no input*/
-
-.inputUser:focus ~ .labelinput, /*executar uma ação na nossa label*/
-.inputUser:valid ~ .labelinput{ /*qdo o input tiver válido, eu quero que ele execute essa ação para a label - a informação irá permanecer no input, senão irá ficar por cima*/
-  
-  top: -20px;
-  font-size: 20px;
-  color: dodgerblue;
+.titulo-principal{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-30%, -12%);
+    font-size: 45px;
+    /*font-family: Barlow;*/
 }
 
-#data_nascimento{
-  border: none;
-  padding: 8px;
-  border-radius: 10px;
-  outline: none;
-  font-size: 15px;
+main{
+    width: 940px;
+    margin: auto;
 }
 
-#enviar{
-  background-image: linear-gradient(to right, rgb(0,92, 192), rgb(90, 20, 220));
-  width: 100%border: none;/*tirar borda do botão Enviar*/
-  padding: 15px;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;/*Qdo passar o mouse por cima do botão enviar, muda o cursosr*/
-  border-radius: 10px;
+form{
+    margin: 40px 0; /*margem superior e inferior de 40px, para os lados zero*/
 }
 
-#enviar:hover{
-  background-image: linear-gradient(to right, rgb(0, 92, 192), rgb(90, 20, 195));
-  /*Qdo passar o mouse por cima do botão enviar, irá aplicar esse azul um pouco mais escuro*/
+form label, form p{/*vamos replicar a mesma configuração do form label para o parágrafo, por isso, o uso da vírgula */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;/* 10px para baixo*/
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;/* 20px para baixo*/
+    padding: 0 0 20px;/* 10 px p/ cima e p/ baixo e 25px p/ lados*/
+    width: 50%;/* largura dos meus inputs*/
+}
+
+input::placeholder{
+    color: black;
+}
+
+.checkbox{
+    margin: 20px 0;/* 20px p/ cima e p/ baixo e zero nas laterais*/
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(243, 156, 220);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(231, 183, 215);
+    transform: scale(2,2);
+}
+
+.copyright{
+    color: rgb(7, 6, 7);
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    /*Esta propriedade é utilizada para inserir imagens como plano de fundo de um elemento para isso, fazemos uso da função url().
+    para a qual passamos como parâmetro o caminho da imagem a ser inserida.*/
+   
+    padding: 10px;
+}
+
+.titulo-principal1{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-30%, -12%);
+    font-size: 20px;
+    color: aliceblue;
+    /*A propiredade text-shadow acrescenta sombra. Ela aceita uma lista de sombras separadas 
+    aplicados ao texto e ao text-decorations*/
+    color: 0;
+    text-shadow: 
+                -1px -1px 0px #4d4b4c,
+                -1PX 4PX 0PX #4d4b4c,
+                1px -1px 0px #4d4b4c,
+                1px 0px 0px #4d4b4c;
+}
+
+nav{
+    position: absolute;
+    /*posicionamento dos links*/
+    top: 100px;
+    right: 50px;
+}
+
+nav 11{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Josefin Sans',sans-serif;
+
 }
